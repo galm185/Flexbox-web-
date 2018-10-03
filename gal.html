@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>interneting is hard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<main>
+		<div class="section">
+			<div class="content">
+				<p>The “Flexible Box” or “Flexbox” layout mode offers an alternative to <a href="https://internetingishard.com/html-and-css/floats/">Floats</a> for defining the overall appearance of a web page. Whereas floats only let us horizontally position our boxes, flexbox gives us complete control over the alignment, direction, order, and size of our boxes.</p>
+				<div class="img-row">
+					<img src="images/alignment.png" alt="alignment" title="alignment">
+					<img src="images/direction.png" alt="direction" title="direction">
+				</div>
+				<div class="title-row">
+					<h4>alignment</h4>
+					<h4>dircetion</h4>
+				</div>
+				<div class="img-row">
+					<img src="images/order.png" alt="order" title="order">
+					<img src="images/size.png" alt="size" title="size">
+				</div>
+				<div class="title-row">
+					<h4>order</h4>
+					<h4>size</h4>
+				</div>
+				<p>The web is currently undergoing a major transition, so a little discussion around the state of the industry is warranted. For the last decade or so, floats were the sole option for laying out a complex web page. As a result, they’re well supported even in legacy browsers, and developers have used them to build millions of web pages. This means you’ll inevitably run into floats during your web development career (so the previous chapter wasn’t a total waste).</p>
+				<p>However, floats were originally intended for the magazine-style layouts that we covered in  <a href="https://internetingishard.com/html-and-css/floats/#floats-for-content">Floats for Content.</a> Despite what we saw last chapter, the kinds of layouts you can create with floats are actually somewhat limited. Even a simple sidebar layout is, technically speaking, a little bit of a hack. Flexbox was invented to break out of these limitations.</p>
+
+				<p>We’re finally at a point where browser support has hit critical mass and developers can start building full websites with flexbox. Our recommendation is to use flexbox to lay out your web pages as much as possible, reserving floats for when you need text to flow around a box (i.e., a magazine-style layout) or when you need to support legacy web browsers.</p>
+				<div class="img-row">
+					<img src="images/floats.png" alt="floats" title="floats">
+					<img src="images/flexbox.png" alt="flexbox" title="flexbox">
+				</div>
+				<div class="title-row">
+					<h4>floats</h4>
+					<h4>flexbox</h4>
+				</div>
+				<div class="title-row">
+					<h5>(magazine-style-layouts)</h5>
+					<h5>(overall page structure)</h5>
+				</div>
+				<p>In this chapter, we’ll explore the entire flexbox layout model step by step. You should walk away comfortable building virtually any layout a web designer could ever give you.</p>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content">
+				<div class="tilte-style">
+					<div class="galgal"></div>
+					<h3>setup</h3>
+					<div class="galgal"></div>
+				</div>
+				<p>The example for this chapter is relatively simple, but it clearly demonstrates all of the important flexbox properties. We’ll wind up with something that looks like this:</p>
+				<div class="img-center">
+					<img src="images/awesomelogo.png" alt="awesomelogo" title="awesomelogo">
+				</div>
+				<p>For starters, we need an empty HTML document that contains nothing but a menu bar. Make a new <a href="https://internetingishard.com/html-and-css/introduction/#atom-text-editor">Atom project</a> called flexbox to house all the example files for this chapter. Then, create flexbox.html and add the following markup:</p>
+
+	<img src="images/awesomelogo.png" alt="awesomelogo" title="awesomelogo">
+
+				<p>Next, we need to create the corresponding styles.css stylesheet. This won’t look like much: just a full-width blue menu bar with a white-bordered box in it. Note that we’ll be using flexbox instead of our traditional auto-margin technique to center the menu.</p>
+
+	<img src="images/awesomelogo.png" alt="awesomelogo" title="awesomelogo">
+
+				<p>Finally, <a href="https://internetingishard.com/html-and-css/flexbox/flexbox-images-449705.zip">download some images</a> for use by our example web page. Unzip them into the flexbox project, keeping the parent images directory. Your project should look like this before moving on:</p>
+				<div class="img-center">
+					<img src="images/flexboxfolder.png" alt="flexboxfolder" title="flexboxfolder">
+				</div>
+			</div>
+		</div>	
+	</main>
+	<footer>
+		<div id="footer">
+			<div id="container-footer">
+				<div id="title-footer">
+					<div class="galgal"></div>
+					<img src="images/wi-fi.png" alt="" title="" width="50">
+					<div class="galgal"></div>
+				</div>
+				<div id="content-footer">	
+					<nav>
+						<a href="https://twitter.com/internetinghard"><img src="images/twitter.png" alt="twitter" title="twitter" width="48"></a>
+						<a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" title="facebook" width="48"></a>
+						<a href="mailto:contact@internetingishard.com"><img src="images/email.png" alt="email" title="email" width="48"></a>
+					</nav>
+					<div id="footer-column">
+						<p>InternetingIsHard.com is an independent publisher of premium web development tutorials. All content is authored and maintained by Oliver James. He loves hearing from readers, so <a href="https://internetingishard.com/contact/">come say hello!</a></p>
+						<div id="input-box">
+							<input type="text" name="you@example.com" value="you@example.com">		
+							<button>sybscribe</button>
+						</div>
+						<p><small>More tutorials are coming. (Lots more.)
+						Enter your email above, and we’ll let you know when they get here.</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+</body>
+</html>

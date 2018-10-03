@@ -1,0 +1,88 @@
+	main .section{
+			border-bottom: 1px solid darkgray;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}		
+
+		main .section .content{
+			width:60%;
+			margin-top:80px;
+			margin-bottom:80px;
+		}
+		main .section .content .img-row{
+			display: flex;
+			justify-content:space-around;
+		}
+		main .section .content .title-row{
+			display: flex;
+			justify-content:space-around;
+		}
+		main .section .content .title-row h4{
+			 margin-top: 8px;
+			 margin-bottom: 10px;
+		}
+		main .section .content .title-row h5{
+			 margin-top: 0px;
+			 margin-bottom: 12px;
+		}
+		.galgal{
+			width: 250px;
+			height: 1px;
+			background-color: darkgray;
+			margin-left: 10px;
+			margin-right:10px;
+		}
+		div.tilte-style{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		div.img-center{
+			display: flex;
+			justify-content: center;
+		}
+		div#container-footer{
+			width:60%;
+			margin-top:40px;
+			
+		}
+		div#title-footer{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		div#footer{
+			display: flex;
+			justify-content: center;
+		}
+		footer div#footer div#container-footer nav{
+			display:flex;
+			flex-direction: column;
+			border-right: 1px solid darkgray;
+			width: 13%;
+			height: 150px;
+		}
+		footer div#footer div#container-footer nav a{
+			width: 2%;
+		}
+		footer div#footer div#container-footer #content-footer{
+			display: flex;
+		}
+		
+		div#footer-column{
+			display: flex;
+			flex-direction: column;
+			margin:25px;
+		}
+		div#input-box input{
+			border-radius: 10px;
+    		height: 20px;
+		}
+		div#input-box button{
+			border-radius: 10px;
+    		height: 30px;
+    		background-color:#5995DA;
+    		width: 120px;
+    		margin-left: 20px;
+		}
